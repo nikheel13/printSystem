@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.empManagementController">
+   <children>
+      <Separator layoutX="1.0" layoutY="57.0" prefHeight="8.0" prefWidth="792.0" />
+      <Label layoutX="289.0" layoutY="29.0" prefHeight="31.0" prefWidth="332.0" text="Employee Management" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableEmployee" layoutY="60.0" prefHeight="324.0" prefWidth="799.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="59.111088275909424" text="ID" />
+          <TableColumn fx:id="col_firstname" minWidth="0.0" prefWidth="170.4444122314453" text="First Name" />
+            <TableColumn fx:id="col_lastname" prefWidth="154.888916015625" text="Last Name" />
+            <TableColumn fx:id="col_username" prefWidth="135.33334350585938" text="Username" />
+            <TableColumn fx:id="col_phone" prefWidth="163.3333740234375" text="Phone Number" />
+            <TableColumn fx:id="col_position" prefWidth="114.00006103515625" text="Position" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddEmp" layoutX="641.0" layoutY="493.0" mnemonicParsing="false" onMouseClicked="#addEmpButton" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: gray;" text="Add Employee" textFill="WHITE" />
+      <Button layoutX="641.0" layoutY="442.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: gray;" text="Edit Employee" textFill="WHITE" />
+      <Button layoutX="641.0" layoutY="391.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: gray;" text="Delete Employee" textFill="WHITE" />
+      <Button fx:id="returnHome" layoutX="641.0" layoutY="544.0" mnemonicParsing="false" onMouseClicked="#backToHome" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: gray;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="4.0" layoutY="400.0" prefHeight="17.0" prefWidth="116.0" text="First Name :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editFirstName" layoutX="117.0" layoutY="403.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="5.0" layoutY="436.0" prefHeight="17.0" prefWidth="116.0" text="Last Name :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editLastName" layoutX="118.0" layoutY="439.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="5.0" layoutY="472.0" prefHeight="17.0" prefWidth="116.0" text="Username  :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editUsername" layoutX="118.0" layoutY="475.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="6.0" layoutY="508.0" prefHeight="17.0" prefWidth="116.0" text="Phone        :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editPhone" layoutX="119.0" layoutY="511.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="6.0" layoutY="544.0" prefHeight="17.0" prefWidth="116.0" text="Position     :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editPosition" layoutX="119.0" layoutY="547.0" prefHeight="25.0" prefWidth="196.0" />
+      <Separator layoutX="346.0" layoutY="394.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="2.0" />
+      <TextField fx:id="editPassword" layoutX="371.0" layoutY="404.0" prefHeight="25.0" prefWidth="196.0" promptText="Password" />
+      <TextField fx:id="editPassword2" layoutX="371.0" layoutY="440.0" prefHeight="25.0" prefWidth="196.0" promptText="Confrim Password" />
+      <StackPane fx:id="parentContainer" layoutX="122.0" layoutY="36.0" prefHeight="447.0" prefWidth="545.0" />
+   </children>
+</AnchorPane>

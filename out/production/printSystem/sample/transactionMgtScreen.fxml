@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="783.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.transactionManagementController">
+    <children>
+        <Separator layoutX="1.0" layoutY="57.0" prefHeight="8.0" prefWidth="792.0" />
+        <Label layoutX="315.0" layoutY="29.0" prefHeight="31.0" prefWidth="235.0" text="Completed Jobs" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableTransactions" layoutY="60.0" prefHeight="436.0" prefWidth="792.0">
+            <columns>
+                <TableColumn fx:id="col_workid" prefWidth="39.77779257297516" text=" ID" />
+                <TableColumn fx:id="col_aliasname" minWidth="0.0" prefWidth="153.33332443237305" text="Username" />
+                <TableColumn fx:id="col_workname" prefWidth="159.11106872558594" text="Job Name" />
+                <TableColumn fx:id="col_numbsheets" prefWidth="64.6666259765625" text="NoSheets" />
+                <TableColumn fx:id="col_numbcopies" prefWidth="66.44439697265625" text="NoCopies" />
+            <TableColumn fx:id="col_worktype" prefWidth="163.55563354492188" text="Print Type" />
+            <TableColumn fx:id="col_workstatus" prefWidth="68.0" text="Status" />
+            <TableColumn fx:id="col_workcost" prefWidth="75.0" text="Cost" />
+            </columns>
+        </TableView>
+        <Button fx:id="returnHome" layoutX="339.0" layoutY="531.0" mnemonicParsing="false" onMouseClicked="#backToHome" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: gray;" text="Home" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

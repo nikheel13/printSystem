@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeController">
+   <children>
+      <Button fx:id="employeeView" layoutX="33.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#employeeManagementScreen" prefHeight="91.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-background-radius: 20;" text="Employee Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="jobView" layoutX="188.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#jobManagementScreen" prefHeight="91.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-background-radius: 20;" text="Print Job Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="aliasView" layoutX="345.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#aliasManagementScreen" prefHeight="91.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-background-radius: 20;" text="Alias Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="transactionView" layoutX="495.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#transactionManagementScreen" prefHeight="91.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-background-radius: 20;" text="Completed Print Jobs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="2.0" layoutY="32.0" prefHeight="10.0" prefWidth="792.0" />
+      <Label layoutX="319.0" layoutY="5.0" prefHeight="27.0" prefWidth="213.0" text="Home Control Panel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="printersView" layoutX="648.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#printersManagementScreen" prefHeight="91.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-background-radius: 20;" text="Printers Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
